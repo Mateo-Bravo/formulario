@@ -1,0 +1,81 @@
+		body {
+			margin: 0;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			display: flex;
+		}
+
+		.header {
+			background-color: #8c1c1c;
+			padding: 0em;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100%;
+			margin: 0;
+		}
+
+		h1 {
+			margin: 0;
+			padding: 1rem;
+			color: #ffffff;
+		}
+
+		form {
+			display: flex;
+			flex-direction: column;
+			padding: 0px;
+			width: 100%;
+			border: #000000 1px solid;
+		}
+
+		label {
+			color: black;
+			margin-top: 12px;
+			font-size: 16px;
+			font-weight: bold;
+			text-align: left;
+			display: flex;
+			justify-content: left;
+			width: 100%;
+		}
+
+		input[type="email"],
+		input[type="text"],
+		input[type="date"],
+		select {
+			width: 40%;
+			align-items: center;
+		}
+
+		input[type="checkbox"] {
+			cursor: pointer;
+		}
+
+		input[type="submit"] {
+			border-radius: 5px;
+			width: 25%;
+			height: 3rem;
+			cursor: pointer;
+		}
+
+		.form-data {
+			padding-left: 2rem;
+		}
+
+		.select {
+			padding-left: 2rem;
+		}
+
+
+		.footer {
+			text-align: center;
+			border: 1px solid;
+			height: 7rem;
+			display: flex;
+			justify-content: center;
+			background-color: #000000;
+		}
