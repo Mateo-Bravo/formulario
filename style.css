@@ -1,0 +1,44 @@
+.cursiv{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.d{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 89%;
+    padding-left: 10%;
+}
+
+.tittle{
+    text-align: center;
+    background-color: #7d1111;
+    border: 1px solid;
+    color: white;
+    
+}
+
+.c{
+    background-color: white;
+    border: 1px solid; 
+    width: 40%;
+
+}
+
+.f{
+    background-color: black;
+    border: 1px solid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 88%;
+    justify-content: center;
+    display: flex;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

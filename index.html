@@ -5,50 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
-    <link rel="stylesheet" href="estilos.css">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div class="container">
-
-        <form>
-            <div class="header">
-                <h1>Formulario de Registro</h1>
+        <div class="c">
+            <div class="tittle">
+                <h1>
+                    <p class="cursiv">Formulario de Registro</p>
+                </h1>
             </div>
-            <div class="form-data">
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
 
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <div class="d">
+                <label for="email">Email:</label> <br />
+                <input type="text" id="email" name="Email" value="" onblur="verifyRequired(this)" />
+                </br>
 
-                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
-                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <label for="name">Nombre completo:</label> <br />
 
-                <label for="sexo">Sexo:</label>
-                <select id="sexo" name="sexo" required>
-                    <option value="">Seleccione una opción</option>
-                    <option value="femenino">Mujer</option>
-                    <option value="masculino">Hombre</option>
+                <input type="text" id="name" name="" value="" onblur="verifyRequired(this)" />
+                </br>
+                <label for="birthdate">Fecha de Nacimiento:</label> <br>
+                <input type="date" id="birthdate" onblur="verifyRequired(this)" />
+                </br>
+
+
+                <label for="sex">Sexo:</label> <br />
+                <select id="sex" name="sex" onblur="verifyRequired(this)">
+                    <option value="1">Masculino</option>
+                    <option value="2">Femenino</option>
                 </select>
+                </br>
+                <br>
+                <form>
+
+                    <label for="interests">Intereses:</label> <br />
+
+                    <label> <input type="checkbox" id="interests" name="interests" value="1"> Computacion </label><br>
+
+                    <label> <input type="checkbox" id="interests" name="interests" value="2"> Deportes </label><br>
+
+                    <label> <input type="checkbox" id="interests" name="interests" value="3"> Musica </label><br>
+
+                    <label> <input type="checkbox" id="interests" name="interests" value="4"> Videojuegos </label><br>
+
+                </form>
+                </br>
             </div>
-            <div class="select">
-                <label> Intereses</label>
-                <p for="interes1">Computers</p>
-                <input type="checkbox" id="interes1" name="interes1" value="deporte">
-                <p for="interes2">Sports</p>
-                <input type="checkbox" id="interes2" name="interes2" value="Games">
-                <p for="interes3">Games</p>
-                <input type="checkbox" id="interes3" name="interes3" value="musica">
-                <p for="interes4">Música</p>
-                <input type="checkbox" id="interes4" name="interes4" value="musica">
-            </div>
-            <div class="footer">
-                <input type="submit" value="Registrar">
-            </div>
-        </form>
-    </div>
+
+            <div class="f">
+                <h1>
+                    <button class="button" type="button" onclick="register()">
+                        Registrar
+                    </button>
+                </h1>
+                <script src="formEmpty.js"> </script>
 </body>
 
 </html>
